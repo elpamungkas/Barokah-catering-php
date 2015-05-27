@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/stuck.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+
+  }); 
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+          <a href="index.html">
+            <img src="images/logoku.png" alt="Logo alt"></a>        
+		</h1>  
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="index.html">Beranda</a></li>
+               <li><a href="index-1.php">Paket</a></li>
+               <li><a href="index-2.php">Reservasi</a></li>
+			    <li class="current"><a href="index-4.html">Contacts</a></li>
+               <li><a href="index-3.php">Log in</a></li>
+             </ul>
+            </nav>        
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+</header>        
+
+<!--=====================
+          Content
+======================-->
+<section class="content ctn__1"><div class="ic">Barokah Catering.com</div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h2>Kontak</h2>
+        <div class="map">
+          <div class="row">
+            <div class="grid_9">
+              <figure class="">
+                <iframe src=			"https://www.google.com/maps/place/Mranggen,+Demak,+Jawa+Tengah,+Indonesia/@-7.0496009,110.5215145,12z/data=!3m1!4b1!4m2!3m1!1s0x2e709208034e21d5:0x4027a76e35307c0" style="border:0"></iframe>
+              </figure>
+            </div>
+            <div class="grid_3">
+              <div class="map_block">
+                <div class="map_title">Alamat:</div>
+                Mranggen, <br> Demak 50275.
+              </div>
+              <div class="map_block">
+                <div class="map_title">Telephone:</div>
+                +62 896 8973 5532  <br>+62 857 8679 1338
+              </div>
+              <div class="map_block">
+                <div class="map_title">Pin:</div>
+                7496530B<br>
+				</div>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="grid_8">
+        <p><span class="color1 fw">Tentang Kami</span>. <br>
+          Barokah Catering.com merupakan usaha catering keluarga yang baru berdiri pada pertengahan Juni 2014. Berawal dari ide sang founder, Yeyen Kumalasari, yang juga salah satu mahasiswa Ekonomi & Bisnis Universitas Diponegoro, bisnis kecil-kecilan ini yang sekarang dikembangkan secara perlahan.  Kami melayani catering untuk pernikahan, coffee break, ulang tahun, lunch box, dll. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="form_block">
+  <div class="container">
+    <div class="row">
+      <div class="grid_11">
+        <h2>Kritik & Saran</h2>
+        <form id="form" >
+        <div class="form_spinner">
+        <img src="images/Preloader_4.gif" alt="">
+        </div>
+        <div class="modal fade response-message">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+        asfasfasf
+        </div>      
+        </div>
+        </div>
+        </div>
+        <div class="response-error-message"></div>
+        <label class="name">
+        <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters" />
+        <span class="empty-message">*This field is required.</span>
+        <span class="error-message">*This is not a valid name.</span>
+        </label>         
+        <label class="email">
+        <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+        <span class="empty-message">*This field is required.</span>
+        <span class="error-message">*This is not a valid email.</span>
+        </label>
+        <label class="phone">
+        <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers"/>
+        <span class="empty-message">*This field is required.</span>
+        <span class="error-message">*This is not a valid phone.</span>
+        </label>
+        <label class="message">
+        <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+        <span class="empty-message">*This field is required.</span>
+        <span class="error-message">*The message is too short.</span>
+        </label>
+        <div class="clear"></div>
+        <div class="btns">
+        <a href="#" data-type="reset" class="btn">clear</a>
+        <a href="#" data-type="submit" class="btn">send</a>
+        </div>
+        </form>   
+      </div>
+    </div>
+  </div>
+</div>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">  
+        <div class="socials">
+         <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+          <a href="https://plus.google.com/" target="_blank" class="fa fa-google-plus"></a>
+          <a href="http://www.pinterest.com/" target="_blank" class="fa fa-pinterest"></a>
+        </div>
+        <div class="copyright"><span class="brand">Bliss </span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <div>Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</footer> 
+</body>
+</html>
